@@ -1,22 +1,27 @@
 {
   "name": "vscode-html-languageserver-bin",
-  "version": "1.0.0",
+  "description": "Binary version published on npm of vscode-html-languageserver extracted from VSCode tree",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vscode-langservers/vscode-html-languageserver-bin.git"
   },
+  "author": "VSCode Langservers",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vscode-langservers/vscode-html-languageserver-bin/issues"
   },
   "homepage": "https://github.com/vscode-langservers/vscode-html-languageserver-bin#readme",
   "devDependencies": {
-    "typescript": "^2.4.2"
+    "typescript": "^2.6.2"
   },
-  "bin": { "html-languageserver" : "htmlServerMain.js" },
+  "bin": {
+    "html-languageserver": "htmlServerMain.js"
+  },
   "scripts": {
     "mergePackages": "node ./mergePackages.js",
     "addShebang": "sed -i '1i#!/usr/bin/env node' dist/htmlServerMain.js",
-    "build": "cd vscode-html-languageserver && npm install && tsc -p . --outDir ../dist --lib dom,es5 && cd .. && npm run addShebang",
+    "build": "cd vscode-html-languageserver && npm install && tsc -p . --outDir ../dist --lib dom,es6 && cd .. && npm run addShebang",
     "publish": "npm run build && npm run mergePackages && npm publish dist",
     "pack": "npm run build && npm run mergePackages && npm pack dist",
     "clean": "rm -rf dist"

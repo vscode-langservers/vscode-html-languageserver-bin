@@ -8,6 +8,7 @@ Binary version published on npm of [vscode-html-languageserver](https://github.c
 - [x] Formatting
 - [x] Document Symbols & Highlights
 - [x] Document Links
+- [x] [CSS Support](https://github.com/vscode-langservers/vscode-css-languageserver-bin#features)
 
 ## Getting Started
 
