@@ -4,11 +4,12 @@ Binary version published on npm of [vscode-html-languageserver](https://github.c
 
 # Features
 
-- [x] Completion provider
-- [x] Formatting
-- [x] Document Symbols & Highlights
-- [x] Document Links
-- [x] [CSS Support](https://github.com/vscode-langservers/vscode-css-languageserver-bin#features)
+-   [x] Completion provider
+-   [x] Formatting
+-   [x] Document Symbols & Highlights
+-   [x] Document Links
+-   [x] [CSS mode](https://github.com/vscode-langservers/vscode-css-languageserver-bin#features)
+-   [x] Javascript mode
 
 ## Getting Started
 
@@ -32,7 +33,7 @@ The common way to launch it is by using stdio transport:
 html-languageserver --stdio
 ```
 
-However the server can be launched also with one of the following transports:
+The server can also be launched with one of the following transports:
 
 ```bash
 html-languageserver --socket={number}
