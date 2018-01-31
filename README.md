@@ -63,7 +63,7 @@ npm run pack
 
 We use [SemVer](http://semver.org/) for versioning.
 
-Because we [can't guess](https://github.com/vscode-langservers/vscode-html-languageserver/blob/master/package.json#L4) VSCode extention version, we update `MINOR` when submodule is updated and 'PATCH' when only build method is updated
+Because we [can't guess](https://github.com/vscode-langservers/vscode-html-languageserver/blob/master/package.json#L4) VSCode extention version, we update `MINOR` when submodule is updated and `PATCH` when only build method is updated
 
 ## License
 
