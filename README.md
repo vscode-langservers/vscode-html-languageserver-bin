@@ -1,5 +1,8 @@
 # vscode-html-languageserver-bin
 
+[![npm](https://img.shields.io/npm/v/vscode-html-languageserver-bin.svg)](https://www.npmjs.com/package/vscode-html-languageserver-bin)
+[![Join the chat at https://gitter.im/vscode-langservers/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/vscode-langservers/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Binary version published on npm of [vscode-html-languageserver](https://github.com/vscode-langservers/vscode-html-languageserver) extracted from [VSCode tree](https://github.com/Microsoft/vscode/tree/master/extensions/html/server)
 
 # Features
