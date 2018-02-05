@@ -14,6 +14,11 @@ Binary version published on npm of [vscode-html-languageserver](https://github.c
 -   [x] [CSS mode](https://github.com/vscode-langservers/vscode-css-languageserver-bin#features)
 -   [x] Javascript mode
 
+# Clients
+
+-   [Oni](https://github.com/onivim/oni)
+-   [ide-html](https://github.com/liuderchi/ide-html)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
