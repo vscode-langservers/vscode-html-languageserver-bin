@@ -64,8 +64,12 @@ To setup the repo locally run:
 git clone --recursive https://github.com/vscode-langservers/vscode-html-languageserver-bin
 cd vscode-html-languageserver-bin
 npm install
-npm run pack
+npm run build
 ```
+
+This will produce `*.js` files, including the primary executable `htmlServerMain.js`, in a folder named `dist`.
+
+Run `node /path/to/dist/htmlServerMain.js`, with or without arguments, to start the language server.
 
 ## Versioning
 
