@@ -10,7 +10,7 @@ const throwIfError = res => {
 }
 
 console.log(green(`Installing ${cyan('vscode-html-languageserver')} dependencies`));
-throwIfError(spawnSync('npm', ['install'], {
+throwIfError(spawnSync('yarn', ['install'], {
 	cwd: join(__dirname, 'vendor/vscode-html-languageserver'),
 	stdio: 'inherit'
 }));
