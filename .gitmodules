@@ -1,4 +1,4 @@
 [submodule "vscode-html-languageserver"]
-	path = vscode-html-languageserver
+	path = vendor/vscode-html-languageserver
 	url = https://github.com/vscode-langservers/vscode-html-languageserver.git
 	ignore = dirty

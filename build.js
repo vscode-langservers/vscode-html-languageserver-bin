@@ -10,18 +10,15 @@ const throwIfError = res => {
 }
 
 console.log(green(`Installing ${cyan('vscode-html-languageserver')} dependencies`));
-throwIfError(spawnSync('npm', ['install'], {
-	cwd: join(__dirname, 'vscode-html-languageserver'),
+throwIfError(spawnSync('yarn', ['install'], {
+	cwd: join(__dirname, 'vendor/vscode-html-languageserver'),
 	stdio: 'inherit'
 }));
 
 console.log(green(`Compiling ${cyan('vscode-html-languageserver')}`));
-const tsconfig = require('./vscode-html-languageserver/tsconfig.json')
 throwIfError(spawnSync('tsc', [
-	'-p', 'vscode-html-languageserver',
+	'-p', 'vendor/vscode-html-languageserver',
 	'--outDir', 'dist',
-	'--lib', tsconfig.compilerOptions.lib.concat(['dom']).join(','),
-	'--target', tsconfig.compilerOptions.target,
 	'--listEmittedFiles'
 ], {
 	cwd: __dirname,
@@ -39,7 +36,7 @@ writeFileSync(file, lines.join('\n'), 'utf8')
 
 console.log(green(`Merging package.json files`));
 const currentPackage = require('./package.json');
-const HTMLLSPackage = require('./vscode-html-languageserver/package.json');
+const HTMLLSPackage = require('./vendor/vscode-html-languageserver/package.json');
 
 writeFileSync(join(__dirname, 'dist', 'package.json'), JSON.stringify(Object.assign(HTMLLSPackage, currentPackage, {
 	scripts: {},
